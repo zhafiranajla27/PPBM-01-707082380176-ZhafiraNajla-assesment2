@@ -1,0 +1,93 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:gravity="center"
+    tools:context="ui.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:src="@drawable/blogger"
+                tools:layout_editor_absoluteX="-7dp"
+                tools:layout_editor_absoluteY="-2dp"
+                tools:ignore="MissingConstraints" />
+
+            <FrameLayout
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                app:layout_editor_absoluteX="280dp"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp"
+                    android:src="@drawable/favorite" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:text="99"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    android:layout_gravity="end"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/red"
+                    android:background="@drawable/bg_round"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                app:layout_editor_absoluteX="330dp"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp"
+                    android:src="@drawable/chat" />
+                
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:text="10"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    android:layout_gravity="end"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/red"
+                    android:background="@drawable/bg_round"/>
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/story_recyclerView_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="1"
+            tools:itemCount="10"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

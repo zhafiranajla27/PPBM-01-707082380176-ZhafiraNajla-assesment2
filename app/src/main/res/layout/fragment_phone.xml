@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ui.PhoneFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/usericon"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/personName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/profile_pic"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:text=" Nama" />
+
+    <TextView
+        android:id="@+id/phone_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_pic"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="150dp"
+        android:text=" Phone number "
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/countryprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_pic"
+        android:layout_marginTop="104dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginBottom="20dp"
+        android:text=" Country"
+        android:textColor="@color/black" />
+
+
+</RelativeLayout>
